@@ -21,24 +21,24 @@
     "reverse_mapping": true
   },
   "outbounds": [
-    {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "DIRECT"]},
+    {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "direct"]},
     {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["官网|到期时间|剩余|流量|套餐|免费|订阅|全球直连|GB|Expire Date|Traffic|ExpireDate"]}], "interval": "10m", "tolerance": 100},
-    {"tag": "🇭🇰 香港手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"]}, {"action": "exclude", "keywords": ["免费"]}]},
-    {"tag": "🇹🇼 台湾手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇹🇼|TW|tw|台|台湾|Taiwan"]}, {"action": "exclude", "keywords": ["免费"]}]}
-    {"tag": "🇯🇵 日本手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇯🇵|JP|jp|日本|Japan"]}, {"action": "exclude", "keywords": ["免费"]}]},
-    {"tag": "🇸🇬 新加坡手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}, {"action": "exclude", "keywords": ["免费"]}]},
-    {"tag": "🇺🇲 美国手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|United States"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}]},
-    {"tag": "🧠 AI", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "DIRECT"]},
-    {"tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "DIRECT"]},
-    {"tag": "🔍 Google", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "DIRECT"]},
-    {"tag": "🎵 TikTok", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "DIRECT"]},
-    {"tag": "🎮 Xbox", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "DIRECT"]},
-    {"tag": "🎥 Netflix", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "DIRECT"]},
+    {"tag": "🇭🇰 香港节点", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"]}, {"action": "exclude", "keywords": ["免费"]}]},
+    {"tag": "🇹🇼 台湾节点", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇹🇼|TW|tw|台|台湾|Taiwan"]}, {"action": "exclude", "keywords": ["免费"]}]},
+    {"tag": "🇯🇵 日本节点", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇯🇵|JP|jp|日本|Japan"]}, {"action": "exclude", "keywords": ["免费"]}]},
+    {"tag": "🇸🇬 新加坡节点", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}, {"action": "exclude", "keywords": ["免费"]}]},
+    {"tag": "🇺🇲 美国节点", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|United States"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}]},
+    {"tag": "🧠 AI", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "direct"]},
+    {"tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "direct"]},
+    {"tag": "🔍 Google", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "direct"]},
+    {"tag": "🎵 TikTok", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "direct"]},
+    {"tag": "🎮 Xbox", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "direct"]},
+    {"tag": "🎥 Netflix", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "direct"]},
     {"tag": "📺 AbemaTV", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇯🇵|JP|jp|日本|Japan"]}, {"action": "exclude", "keywords": ["免费"]}]},
-    {"tag": "❤️ 特殊", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "DIRECT"]},
+    {"tag": "❤️ 特殊", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🇭🇰 香港节点", "🇹🇼 台湾节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 全部节点", "direct"]},
     {"tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🚀 默认代理", "direct"]},   
     {"tag": "🌐 全部节点", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["网站|流量|地址|剩余|过期|免费|时间|有效|Traffic|ExpireDate|GB|Expire Date"]}]},
-    {"tag": "GLOBAL", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["网站|流量|地址|剩余|过期|免费|时间|有效|Traffic|ExpireDate|GB|Expire Date"]}]},
+    {"tag": "GLOBAL", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["网站|流量|地址|剩余|过期|免费|时间|有效|Traffic|ExpireDate|GB|Expire Date"]}]}
   ],
   "route": {
     "rules": [
@@ -52,7 +52,7 @@
       {"domain": ["steampipe.akamaized.net","steampipe-partner.akamaized.net","steampipe-kr.akamaized.net"],"outbound":"direct"},
       {"domain_suffix": ["steamcontent.com","wmsjsteam.com","csgo.wmsj.cn","dota2.wmsj.cn","dl.steam.clngaa.com","st.dl.eccdnx.com","st.dl.bscstorage.net","st.dl.pinyuncloud.com"],"outbound":"direct"},
       {"rule_set": "geosite-javdb","outbound":"❤️ 特殊"},
-      {"rule_set": "geosite-abema","outbound":"📺 AbemaTV"}
+      {"rule_set": "geosite-abema","outbound":"📺 AbemaTV"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
       {"rule_set": "geosite-google", "outbound": "🔍 Google"},
