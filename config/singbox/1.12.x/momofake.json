@@ -164,7 +164,7 @@
   },
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "fatal",
     "timestamp": true
   }
 }
